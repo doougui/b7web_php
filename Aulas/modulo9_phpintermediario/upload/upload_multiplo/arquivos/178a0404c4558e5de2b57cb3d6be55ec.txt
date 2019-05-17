@@ -1,0 +1,66 @@
+- Calculadora Básica (campos separados)
+- Calculadora Intermediária (1 campo)
+- Calculadora Avançada (equações)
+- Verificar se é humano (através de conta matemática)
+- Verificar se é maior de idade (pela data de nascimento)
+- Listar arquivos e navegar pastas
+- Jogo da velha
+- "Sistema operacional" no navegador
+- Calculadora de troco
+- Conversor de moedas
+- Display digital de números
+- Verificar ganhou/perdeu em jogo de moeda
+- Placar de jogo de futebol
+- Script para dar unfollow em usuários do instagram que não te seguem
+- Mostrar um deck de cartas
+- Jogo batalha naval
+- Jogo da forca
+- Script que você dá uma frase e ele cria vários .txt com uma palavra em cada ***
+- Verificador de Plágio (Usando o Google com aspas)
+- Pedra, papel e tesoura contra a máquina
+- Pedra, papel e tesoura online
+- Livro de contatos
+- Conversor de número romano em inteiro
+- Script que lista o número de dias em cada mês
+- Jogo de luta intercalada (um golpe por vez, dano aleatório) 
+- Mostrar profissão aleatória 
+- Distância entre duas posições geográficas
+- Usuário insere vários números e mostra a média
+- Simulador de dado
+- Mostrar a temperatura atual em X localização (pegando de algum webservice)
+- Tela de compras de supermercado 
+- Contagem Regressiva
+- Jogo de blackjack (21)
+- Calculadora de tijolos necessários
+- Validador de cartão de crédito (pesquisar como cartões de crédito funcionam)
+- Nome dos números (mil duzentos e trinta e três)
+- Reordenador de lista
+- Inverter a string
+- Gerador de feed RSS baseado em banco de dados
+- Área de comentários 
+- Testador de expressões regulares
+- Pegar localização pelo IP ( http://ipinfo.io/0.0.0.0/json )
+- Sistema de consulta para médicos 
+- Sistema de conta bancária 
+- Galeria de imagens (com categorias)
+- Criador de thumbnail
+- Page Scraper (entra em um site e salva todos os links, sem duplicar)
+- Sistema de gerenciamento de conteúdo (opcional: modular)
+- Forum
+- Sistema de Captcha
+- Gerador de PDF
+- Ferramenta de SQL Remoto
+- Gerenciador de orçamento pessoal
+- Slideshow
+- Portal de Notícias
+
+
+
+- Extensão para o Chrome ***
+- Script que você dá uma frase e ele cria vários .txt com uma palavra em cada ***
+- Jogo de luta intercalada (um golpe por vez, dano aleatório) ***
+- Mostrar profissão aleatória ***
+- Tela de compras de supermercado ***
+- Área de comentários ***
+- Sistema de consulta para médicos ***
+- Sistema de conta bancária ***

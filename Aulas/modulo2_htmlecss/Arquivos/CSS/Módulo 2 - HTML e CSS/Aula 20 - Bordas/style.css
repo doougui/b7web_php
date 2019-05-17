@@ -1,0 +1,77 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-image: linear-gradient(to bottom, #8002F0, #B80DFB);
+}
+
+.teste {
+	background-color: #282A2D;
+	color: #ffffff;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+
+.teste:hover {
+	background-color: transparent;
+}
+
+.teste p {
+	font-family: Arial;
+	padding-top: 140px;
+	text-align: center;
+	font-size: 30px;
+	transition: 1s;
+}
+
+.teste p:hover {
+	color: transparent;
+}
+
+.teste p::after {
+	content: "";
+	width: 70px;
+	height: 4px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color: currentColor;
+}
+
+.teste p::before {
+	content: "";
+	width: 70px;
+	height: 4px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background-color: currentColor;
+}
+
+.solid {
+	margin-top: 10px;
+	border: 3px solid #0E1013;
+}
+
+.dotted {
+	margin-top: 10px;
+	border: 3px dotted #0E1013;
+}
+
+.dashed {
+	margin-top: 10px;
+	border: 3px dashed #0E1013;
+}
+
+.radius {
+	margin-top: 10px;
+	border: 3px solid #0E1013;
+	border-radius: 10px;
+}
+
+.double {
+	margin-top: 10px;
+	border: 3px double #0E1013;
+}

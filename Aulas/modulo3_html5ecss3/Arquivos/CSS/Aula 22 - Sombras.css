@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+}
+
+.exemplo {
+	width: 150px;
+	height: 150px;
+	margin: 100px auto;
+	background-color: green;
+	box-shadow: 0px 0px 30px #000000; /*Sombra em todos os lados*/
+	box-shadow: 5px 5px 5px #000000; /*Sombra pra direita e pra baixo*/
+}
+
+.exemplo p {
+	text-shadow: 3px 3px 4px #000000; /*Sombra para textos*/
+	text-align: center;
+	padding-top: 40%;
+	color: white;
+}

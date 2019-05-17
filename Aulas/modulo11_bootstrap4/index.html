@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta -->
+	<title>Bootstrap 4</title>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+	<!-- Aula 2 - Estruturando o Projeto -->
+	<h1>Aula 2 - Estruturando o Projeto.</h1>
+
+
+	<!-- Aula 4 - Grid - Introdução -->
+	<div class="container-fluid" style="background-color: #f8c291;">
+		<h1>Aula 4 - Grid - Introdução.</h1>
+	</div>
+
+	<div class="container" style="background-color: #fa983a;">
+		<h1>Container.</h1>
+
+		<div class="row">
+			<div class="col-lg" style="background-color: #e55039">Coluna 1</div> <!-- sm / lg / lg -->
+			<div class="col-lg" style="background-color: #eb2f06">Coluna 2</div> <!-- sm / lg / lg -->
+			<div class="col-lg" style="background-color: #b71540">Coluna 3</div> <!-- sm / lg / lg -->
+		</div>
+	</div> 
+
+	<!-- Aula 5 - Grid - Coluna com largura e nova linha -->
+	<div class="container" style="background-color: #7158e2;">
+		<h1>Aula 5 - Grid - Coluna com largura e nova linha.</h1>
+		<div class="row">
+			<div class="col-sm" style="background-color: #67e6dc; border: 1px solid #DDD;">Coluna 1</div>
+			<div class="col" style="background-color: #17c0eb; border: 1px solid #DDD;">Coluna 2</div>
+			<div class="col-2" style="background-color: #18dcff; border: 1px solid #DDD;">Coluna 3</div>
+			<div class="w-100"></div> <!-- "w-100" Pula a linha, como se fosse um novo row -->
+			<div class="col" style="background-color: #67e6dc; border: 1px solid #DDD;">Coluna 4</div>
+			<div class="col" style="background-color: #17c0eb; border: 1px solid #DDD;">Coluna 5</div>
+			<div class="col" style="background-color: #18dcff; border: 1px solid #DDD;">Coluna 6</div>
+		</div>
+	</div> 
+
+	<!-- Aula 6 - Grid - Ordenando Colunas -->
+	<div class="container" style="background-color: #fff200;">
+		<h1>Aula 6 - Grid - Ordenando Colunas.</h1>
+
+		<div class="row">
+			<!-- O order-{num} coloca as desordenadas primeiro -->
+			<div class="col order-2" style="background-color: #fffa65">Primeira</div> 
+			<!-- O order-position coloca na posição independente das desordenadas -->
+			<div class="col order-last" style="background-color: #ffaf40">Segunda</div>
+			<div class="col order-first" style="background-color: #ff9f1a">Terceira</div>
+			<div class="col" style="background-color: #ff9f1a">Quarta</div>
+			<div class="col" style="background-color: #fffa65">Quinta</div>
+		</div>
+	</div> 
+
+	<!-- Aula 7 - Grid - JustifyContent e AlignItems -->
+	<div class="container" style="background-color: #273c75;">
+		<h1>Aula 7 - Grid - JustifyContent e AlignItems.</h1>
+
+		<div class="row justify-content-between" style=" padding: 10px;"> <!-- Between / Around / Start / End / Etc -->
+			<div class="col-3" style="background-color: #192a56">Coluna 1</div>
+			<div class="col-3" style="background-color: #40739e">Coluna 2</div>
+			<div class="col-3" style="background-color: #487eb0">Coluna 3</div>
+		</div>
+
+		<div class="row align-items-center justify-content-center" style="height: 150px; background-color: #2f3640; padding: 10px;"> <!-- Between / Around / Start / End / Etc -->
+			<div class="col-3" style="background-color: #dcdde1; height: 50px;">Coluna 1</div>
+			<div class="col-3" style="background-color: #7f8fa6; height: 50px;">Coluna 2</div>
+			<div class="col-3" style="background-color: #718093; height: 50px;">Coluna 3</div>
+		</div>
+	</div> 
+
+	<!-- Aula 8 - Media Component -->
+	<div class="container" style="background-color: #fa983a;">
+		<h1>Aula 8 - Media Component.</h1>
+		
+		<ul class="list-unstyled">
+			<li class="media">
+				<img src="assets/img/Tropical.jpg" class="mr-3" style="width: 50px; height: 50px;"> 
+				<div class="media-body">
+					<h5>Algum título</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum rerum eos deleniti corporis inventore libero, vitae adipisci qui tenetur dolorem alias ad veniam, voluptatum cupiditate quia accusamus. Omnis, ab, repudiandae.</p>
+				</div>
+			</li>
+			<li class="media">
+				<img src="assets/img/Tropical.jpg" class="mr-3" style="width: 50px; height: 50px;"> 
+				<div class="media-body">
+					<h5>Algum título</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum rerum eos deleniti corporis inventore libero, vitae adipisci qui tenetur dolorem alias ad veniam, voluptatum cupiditate quia accusamus. Omnis, ab, repudiandae.</p>
+				</div>
+			</li>
+		</ul>
+
+		<div class="media">
+			<img src="assets/img/Tropical.jpg" class="mr-3 align-self-center align-self-center" style="width: 50px; height: 50px;"> 
+			<div class="media-body">
+				<h5>Algum título</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum rerum eos deleniti corporis inventore libero, vitae adipisci qui tenetur dolorem alias ad veniam, voluptatum cupiditate quia accusamus. Omnis, ab, repudiandae.</p>
+			</div>
+		</div>
+	</div> 
+
+	<!-- Aula 9 - Tipografia -->
+	<div class="container" style="background-color: #ED4C67;">
+		<div class="h1">Aula 9 - Tipografia.</div>
+		<h3>Usuários <small class="text-muted">Adicionar usuários</small></h3>
+		<p>Aqui eu vou digitar um texto um <span class="mark">pouco maior</span> para você entender.</p>
+		<div class="text-center" style="width: 300px; height: 300px; border: 1px solid #000;">Algum texto.</div>
+		<ul class="list-inline mb-0">
+			<li class="list-inline-item">Item 1</li>
+			<li class="list-inline-item">Item 2</li>
+			<li class="list-inline-item">Item 3</li>
+		</ul>
+	</div>
+
+	<!-- Aula 10 - Imagens -->
+	<div class="container" style="background-color: #5758BB;">
+		<h1>Aula 10 - Imagens.</h1>
+
+		<figure class="figure" style="width: 100%;">
+			<img src="assets/img/kaori.jpg" class="figure-img img-fluid img-thumbnail rounded"> 
+			<figcaption class="figure-caption text-right">Kaori Miyazono</figcaption>
+		</figure>
+	</div>
+
+	<!-- Aula 11 - Tabelas -->
+	<div class="container" style="background-color: #aaa69d;">
+		<h1>Aula 11 - Tabelas.</h1>
+	
+		<div class="table-responsive">
+			<table class="table table-dark table-striped table-bordered table-hover table-sm">
+				<thead class="thead-light thead-dark">
+					<tr>
+						<th>#</th>
+						<th>Nome</th>
+						<th>Sobrenome</th>
+						<th>Idade</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Douglas</td>
+						<td>P. Goulart</td>
+						<td>16</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Ricardo</td>
+						<td>Santos</td>
+						<td>18</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Bonieky</td>
+						<td>Lacerda</td>
+						<td>99</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<!-- Aula 12 - Alertas e avisos -->
+	<div class="container" style="background-color: #218c74;">
+		<h1>Aula 12 - Alertas e avisos.</h1>
+
+		<div class="alert alert-primary" role="alert">Aviso ou alerta para o usuário!</div>
+		<div class="alert alert-secondary" role="alert">Aviso ou alerta para o usuário!</div>
+		<div class="alert alert-success" role="alert">Aviso ou alerta para o usuário!</div>
+		<div class="alert alert-warning" role="alert">Aviso ou alerta para o usuário!</div>
+		<div class="alert alert-danger" role="alert">Aviso ou alerta para o usuário!</div>
+		<div class="alert alert-info" role="alert">Aviso ou alerta para o usuário!</div>
+		<div class="alert alert-dark" role="alert">Aviso ou alerta para o usuário!</div>
+
+		<div class="alert alert-danger alert-dismissible fade show" role="start" style="margin-bottom: 0;">
+			<h4 class="alert-heading">Algo deu errado!</h4>
+			<p>E-mail ou senha incorretos.</p> 
+			<button class="close" data-dismiss="alert" aria-label="Fechar">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
+
+	<!-- Aula 13 - Botões e Grupos de botões -->
+ 	<div class="container" style="background-color: #30336b;">
+ 		<h1>Aula 13 - Botões e Grupos de botões.</h1>
+
+ 		<button class="btn btn-primary btn-block btn-lg">Botão</button>
+
+ 		<a class="btn btn-secondary btn-lg" href="#">Botão</a>
+ 		<button class="btn btn-danger">Botão</button>
+ 		<input class="btn btn-success btn-sm" type="submit" value="Botão">
+ 		<button class="btn btn-link btn-outline-primary">Botão</button>
+ 		<button class="btn btn-outline-primary btn-lg">Botão</button>
+
+ 		<div class="btn-group">
+ 			<button class="btn btn-primary">Botão</button>
+ 			<button class="btn btn-primary">Botão</button>
+ 			<button class="btn btn-primary">Botão</button>
+ 		</div>
+
+ 		<div class="btn-group-vertical">
+ 			<button class="btn btn-primary">Botão</button>
+ 			<button class="btn btn-primary">Botão</button>
+ 			<button class="btn btn-primary">Botão</button>
+ 		</div>
+ 	</div>
+
+	<!-- Aula 14 - Carousel (Slideshow) -->
+	<div class="container" style="background-color: #45aaf2;">
+		<h1>Aula 14 - Carousel (Slideshow).</h1>
+
+		<div id="slideshow" class="slide carousel carousel-fade">
+
+			<ol class="carousel-indicators">
+				<li data-target="#slideshow" data-slide-to="0" class="active"></li>
+				<li data-target="#slideshow" data-slide-to="1"></li>
+				<li data-target="#slideshow" data-slide-to="2"></li>
+				<li data-target="#slideshow" data-slide-to="3"></li>
+			</ol>
+
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="assets/img/foto1.jpg" class="w-100">
+				</div>
+				<div class="carousel-item">
+					<img src="assets/img/foto2.jpg" class="w-100">
+				</div>
+				<div class="carousel-item">
+					<img src="assets/img/foto3.jpg" class="w-100">
+				</div>
+				<div class="carousel-item">
+					<img src="assets/img/foto4.jpg" class="w-100">
+				</div>
+			</div>
+
+			<a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+
+			<a class="carousel-control-next" href="#slideshow" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+	</div>
+
+	<!-- Aula 15 - Collapse -->
+	<div class="container" style="background-color: #ffcccc;">
+		<h1>Aula 15 - Collapse.</h1>
+
+		<button class="btn btn-primary" data-toggle="collapse" data-target="#area">Show / Hidden</button>
+
+		<div class="collapse" id="area">
+			Texto escondido que vai aparecer.
+		</div>
+	</div>
+
+	<!-- Aula 16 - Accordion -->
+	<div class="container" style="background-color: #fff200;">
+		<h1>Aula 16 - Accordion.</h1>
+
+		<div id="accordion">
+
+			<div class="card">
+				<div class="card-header">
+					<button class="btn btn-link" data-toggle="collapse" data-target="#card1" aria-controls="card1">Título do Card 1</button>
+				</div>
+				<div id="card1" class="collapse show" data-parent="#accordion">
+					<div class="card-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illo voluptatem molestias sit fugit modi animi? Ut dolorem, nobis officia? Distinctio dicta, nemo autem sunt maiores fugiat alias, ad numquam vel consequatur iste modi corporis ex sapiente tempore! Enim corporis rerum, vel. In vitae, fugiat officia repellat voluptatum tenetur odio et, deserunt iusto atque minima rem nostrum! Maiores temporibus harum totam, praesentium fugiat vitae porro amet repellendus ad sunt voluptas ipsa! Quia libero expedita maiores possimus sed voluptatem distinctio numquam vel? Eveniet eaque, eos suscipit ullam quisquam incidunt ut a autem, ipsa aspernatur sapiente dicta adipisci odio expedita aut! Tempore!
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<button class="btn btn-link" data-toggle="collapse" data-target="#card2" aria-controls="card2">Título do Card 2</button>
+				</div>
+				<div id="card2" class="collapse" data-parent="#accordion">
+					<div class="card-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptate magnam dolore laborum ea neque ducimus velit eos, laudantium nisi debitis odio voluptas eligendi quae quos consequatur, id delectus pariatur. Assumenda ratione est obcaecati illo aut pariatur dolor veniam culpa maiores, quasi temporibus excepturi nam quas ducimus eos autem fuga.
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Aula 17 - Dropdown -->
+	<div class="container" style="background-color: #ccae62;">
+		<h1>Aula 17 - Dropdown.</h1>
+
+		<div class="dropdown dropright btn-group"> <!-- dropup / dropright / dropbottom (padrão) / dropleft -->
+			<a href="https://Instagram.com" class="btn btn-primary">Instagram</a>
+			<a href="#" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></a>
+
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="https://google.com">Google</a>
+				<a class="dropdown-item" href="https://facebook.com">Facebook</a>
+				<a class="dropdown-item" href="https://youtube.com">YouTube</a>
+				<div class="dropdown-divider"></div>
+				<form method="POST">
+					User: <br>
+					<input type="text" name="usuario">
+				<form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Aula 18 - Formulários -->
+	<div class="container" style="background-color: #dfe6e9;">
+		<h1>Aula 18 - Formulários.</h1>
+
+		<form method="POST" class="form-inline">
+			<div class="form-row">
+				<div class="col">
+					<input type="email" class="form-control" name="email" placeholder="E-mail">
+				</div>
+				<div class="col">
+					<input type="password" class="form-control" name="senha" placeholder="Senha">
+				</div>
+			</div>
+			
+			<div class="form-row">
+				<div class="col">
+					<input type="submit" value="Entrar">
+				</div>
+			</div>
+		</form>
+
+		<hr>
+
+		<form method="POST">
+
+			<div class="form-group">
+				<label for="email">Usuário:</label>
+				<input id="email" type="email" name="email" class="form-control-plaintext" value="Usuário" readonly>
+			</div>
+
+			<div class="form-group">
+				<label for="email">E-mail:</label>
+				<input id="email" type="email" name="email" class="form-control form-control-lg" value="email@gmail.com" readonly>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Senha:</label>
+				<input id="senha" type="password" name="senha" class="form-control form-control-sm">
+			</div>
+
+			<div class="form-group" style="margin: 0; padding: 0;">
+				<input type="submit" value="Entrar" class="btn btn-primary">
+			</div>
+		</form>
+	</div>
+
+	<!-- Aula 19 - Input Group -->
+	<div class="container" style="background-color: #563D7C;">
+		<h1>Aula 19 - Input Group.</h1>
+
+		<form method="POST">
+			<div class="input-group input-group-lg">
+				<div class="input-group-prepend">
+					<span class="input-group-text">R$</span>
+				</div>
+				<input type="number" name="valor" class="form-control" placeholder="Valor">
+				<div class="input-group-append">
+					<span class="input-group-text">,00</span>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<!-- Aula 20 - List Group -->
+	<div class="container" style="background-color: #3C40C6;">
+		<h1>Aula 20 - List Group.</h1>
+
+		<ul class="list-group" style="padding: 20px 0px;">
+			<li class="list-group-item active">Item 1</li> 
+			<li class="list-group-item disabled">Item 2</li>
+			<li class="list-group-item">Item 3</li>
+		</ul>
+
+		<div class="list-group list-group-flush" style="padding: 20px 0px;">
+			<a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="#">
+				Link para o site 1.
+				<span class="badge badge-primary">7</span>
+			</a>
+			<a class="list-group-item list-group-item-action list-group-item-info  d-flex justify-content-between align-items-center" href="#">
+				Link para o site 2.
+				<span class="badge badge-primary">12</span>
+			</a>
+			<a class="list-group-item list-group-item-action  d-flex justify-content-between align-items-center" href="#">
+				Link para o site 3.
+				<span class="badge badge-primary">953</span>
+			</a>
+		</div>
+	</div>
+
+	<!-- Aula 21 - Modal -->
+	<div class="container" style="background-color: #6FDB1E;">
+		<h1>Aula 21 - Modal.</h1> 
+		
+		<button class="btn btn-primary" data-toggle="modal" data-target="#janela">Abrir</button>
+
+		<div class="modal fade" id="janela">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Título do modal</h5>
+						<button class="close" data-dismiss="modal"><span>&times;</span></button>
+					</div>
+					<div class="modal-body">
+						<p>...</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-danger" data-dismiss="modal">Fechar janela</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Aula 22 - Navbar -->
+	<div class="container" style="background-color: #4188CD;">
+		<h1>Aula 22 - Navbar.</h1>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a href="#" class="navbar-brand">Empresa XYZ</a>
+
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="navbar-collapse collapse" id="navbar-menu">
+				<div class="navbar-nav">
+					<a href="#" class="nav-item nav-link active">Link 1</a>
+					<a href="#" class="nav-item nav-link">Link 2</a>
+					<a href="#" class="nav-item nav-link">Link 3</a>
+					<a href="#" class="nav-item nav-link">Link 4</a>
+				</div>
+			</div>
+
+			<form method="POST" class="form-inlne">
+				<input type="text" class="form-control" placeholder="Pesquisar">
+			</form>
+		</nav>
+	</div>
+	
+	<!-- Aula 23 - Paginação -->
+	<div class="container" style="background-color: #BB3575;">
+		<h1>Aula 23 - Paginação.</h1>
+
+		<ul class="pagination pagination-lg" style="margin: 0;">
+			<li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">4</a></li>
+			<li class="page-item active"><a class="page-link" href="#">5</a></li>
+			<li class="page-item disabled"><a class="page-link" href="#">Próximo</a></li>
+		</ul>
+	</div>
+
+	<!-- Aula 24 - ToolTip -->
+	<div class="container" style="background-color: #BB5043;">
+		<h1>Aula 24 - ToolTip.</h1>
+
+		<button class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Ao clicar, irá salvar os dados do usuário.">Salvar</button>
+	</div>
+	
+	<!-- Wrapper Div -->
+	<div style="height: 50vh"></div>
+
+	<!-- JS --> 
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script>
+		$(function() {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+</body>
+</html>

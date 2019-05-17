@@ -1,0 +1,19 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana;
+}
+
+.texto {
+	width: 500px;
+	height: 500px;
+	background-color: #EEEEEE;
+	color: red;
+	font-size: 16px;
+	line-height: 400px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-indent: 40px;
+}

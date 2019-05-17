@@ -1,0 +1,20 @@
+body {
+	background-color: #4188CD;
+	color: #FFFFFF;
+}
+
+h1 {
+	color: #FF0000;
+}
+
+img {
+	width: 200px;
+}
+
+.teste {
+	width: 500px;
+}
+
+#titulo {
+	font-size: 60px;
+}

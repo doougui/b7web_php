@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="width=device-width, user-scalable="no">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<title>Portal</title>
+</head>
+<body>
+	<div class="topo">
+		<div class="topo-interior">
+			<div class="topo-esquerda">
+				<ul>
+					<li><a href="index.html" class="ativo">Home</a></li>
+					<li><a href="quem-somos.html">Quem Somos</a></li>
+					<li><a href="anuncie-aqui.html">Anuncie Aqui</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</div>
+			<div class="topo-direita">
+				<input type="image" src="assets/images/lupa.png" border="0" width="26" height="26">
+				<input type="text" name="busca" placeholder="Busca..." class="topo-busca" style="padding: 0;">
+				<a href=""><img src="assets/images/youtube.png" border="0" width="26" height="26"></a>
+				<a href=""><img src="assets/images/twitter.png" border="0" width="26" height="26"></a>
+				<a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+				<a href=""><img src="assets/images/googleplus.png" border="0" width="26" height="26"></a>
+				<a href=""><img src="assets/images/rss.png" border="0" width="26" height="26"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="topo2">
+		<div class="topo2-interior">
+			<div class="logo">
+				<img src="assets/images/logo.png" border="0" width="230">
+			</div>
+			<div class="banner">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="menu">
+		<div class="menu-interior">
+			<img src="assets/images/menu.png" border="0" width="30" height="30" style="padding-top: 5px;" class="menu-mobile" onclick="toggleMenu()">
+			<ul id="menu">
+				<li><a href="index.html" class="ativo">Home</a></li>
+				<li><a href="#">Economia</a></li>
+				<li>
+					<a href="#">Entretenimento &#9662</a>
+					<!-- <img src="assets/images/arrowdown.jpg" border="0" width="10"> -->
+					<div class="submenu">
+						<a href="#"><div class="submenuitem">Submenu 1</div></a>
+						<a href="#"><div class="submenuitem">Submenu 2</div></a>
+						<a href="#"><div class="submenuitem">Submenu 3</div></a>
+						<a href="#"><div class="submenuitem">Submenu 4</div></a>
+						<a href="#"><div class="submenuitem">Submenu 5</div></a>
+					</div>
+				</li>
+				<li>
+					<a href="#">Esportes &#9662</a>
+					<!-- <img src="assets/images/arrowdown.jpg" border="0" width="10"> -->
+					<div class="submenu">
+						<a href="#"><div class="submenuitem">Submenu 1</div></a>
+						<a href="#"><div class="submenuitem">Submenu 2</div></a>
+						<a href="#"><div class="submenuitem">Submenu 3</div></a>
+					</div>
+				</li>
+				<li><a href="#">Geral</a></li>
+				<li>
+					<a href="#">Notícias &#9662</a>
+					<!-- <img src="assets/images/arrowdown.jpg" border="0" width="10"> -->
+					<div class="submenu">
+						<a href="#"><div class="submenuitem">Submenu 1</div></a>
+						<a href="#"><div class="submenuitem">Submenu 2</div></a>
+						<a href="#"><div class="submenuitem">Submenu 3</div></a>
+						<a href="#"><div class="submenuitem">Submenu 4</div></a>
+					</div>
+				</li>
+				<li><a href="#">Polícia</a></li>
+				<li><a href="#">Videos</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="ultimasnoticias">
+		<div class="ultimasnoticias-interior">
+			<div class="ultnoticiasarea">
+				<div class="ultnoticiastitulo">ÚLTIMAS NOTÍCIAS</div>
+				<div class="ultnoticiasnoticia">Live Gold de novembro tem Battlefield 1, Dante's Inferno e mais.</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="container-interior">
+			<div class="leftside">
+				<div class="slideshow" id="slideshow">
+
+					<div class="slidebolinhas">
+						<div class="bolinha" style="background-color: #999;" onclick="mudarSlide(0)"></div>
+						<div class="bolinha" onclick="mudarSlide(1)"></div>
+						<div class="bolinha" onclick="mudarSlide(2)"></div>
+						<div class="bolinha" onclick="mudarSlide(3)"></div>
+					</div>
+
+					<div class="slideshowarea">
+						<a href="https://www.voxel.com.br/noticias/rockstar-trabalha-patch-corrigir-questao-grafica-rdr2-ps4-pro_839734.htm"><div class="slide" style="background-image: url('assets/images/rdr.jpg')">
+							<div class="slideinfo">
+								<div class="slideinfo-titulo">Red Dead Redemption 2</div>
+								<div class="slideinfo-subtitulo">Rockstar trabalha em patch para corrigir questão gráfica de RDR2.</div>
+							</div>
+						</div></a>
+						<a href="https://www.voxel.com.br/noticias/bully-2-gta-6-remaster-misterioso-rumor-aponta-janelas-lancamento_839675.htm"><div class="slide" style="background-image: url('assets/images/bully.jpg')">
+							<div class="slideinfo">
+								<div class="slideinfo-titulo">Rumores da Rockstar</div>
+								<div class="slideinfo-subtitulo">Bully 2, GTA 6 e remaster misterioso: rumor aponta janelas de lançamento</div>
+							</div>
+						</div></a>
+						<a href="https://www.voxel.com.br/noticias/netflix-divulga-primeiro-olhar-henry-cavill-geralt-rivia_839724.htm"><div class="slide" style="background-image: url('assets/images/witcher.jpg')">
+							<div class="slideinfo">
+								<div class="slideinfo-titulo">The Witcher na Netflix</div>
+								<div class="slideinfo-subtitulo">Netflix divulga 1º teaser oficial de Henry Cavill como Geralt de Rívia</div>
+							</div>
+						</div></a>
+						<a href="https://www.voxel.com.br/noticias/ps-plus-novembro-oferece-yakuza-kiwami-bulletstorm-confira_839729.htm"><div class="slide" style="background-image: url('assets/images/yakuza.jpg')">
+							<div class="slideinfo">
+								<div class="slideinfo-titulo">PS Plus de Novembro</div>
+								<div class="slideinfo-subtitulo">PS Plus de novembro oferece Yakuza Kiwami, Bulletstorm e mais; confira</div>
+							</div>
+						</div></a>
+					</div>
+				</div>
+
+				<div class="widget">
+					<div class="widget-titulo">NOTÍCIAS</div>
+					<div class="widget-conteudo">
+
+						<div class="noticiaarea1">
+							<div class="noticiaitem noticiabig">
+								<div class="noticiaimg">
+									<img src="" border="0" width="80" height="80">
+								</div>
+								<div class="noticiatitulo">Just Cause 3 grátis</div>
+								<div class="noticiainfo">Just Cause 3 estará disponível gratuitamente durante o final de semana</div>
+							</div>
+						</div>
+
+						<div class="noticiaarea2">
+							<div class="noticiaitem">
+								<div class="noticiaimg">
+									<img src="" border="0" width="80" height="80">
+								</div>
+								<div class="noticiatitulo">Just Cause 3 grátis</div>
+								<div class="noticiainfo">Just Cause 3 estará disponível gratuitamente durante o final de semana</div>
+							</div>
+							<div class="noticiaitem">
+								<div class="noticiaimg">
+									<img src="" border="0" width="80" height="80">
+								</div>
+								<div class="noticiatitulo">Just Cause 3 grátis</div>
+								<div class="noticiainfo">Just Cause 3 estará disponível gratuitamente durante o final de semana</div>
+							</div>
+							<div class="noticiaitem">
+								<div class="noticiaimg">
+									<img src="" border="0" width="80" height="80">
+								</div>
+								<div class="noticiatitulo">Just Cause 3 grátis</div>
+								<div class="noticiainfo">Just Cause 3 estará disponível gratuitamente durante o final de semana</div>
+							</div>
+							<div class="noticiaitem">
+								<div class="noticiaimg">
+									<img src="" border="0" width="80" height="80">
+								</div>
+								<div class="noticiatitulo">Just Cause 3 grátis</div>
+								<div class="noticiainfo">Just Cause 3 estará disponível gratuitamente durante o final de semana</div>
+							</div>
+						</div>
+
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="rightside">
+				<div class="widget">
+					<div class="widget-titulo">SOCIAL</div>
+					<div class="widget-conteudo">
+						<a href=""><img src="assets/images/youtube.png" border="0" width="26" height="26"></a>
+						<a href=""><img src="assets/images/twitter.png" border="0" width="26" height="26"></a>
+						<a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+						<a href=""><img src="assets/images/googleplus.png" border="0" width="26" height="26"></a>
+						<a href=""><img src="assets/images/rss.png" border="0" width="26" height="26"></a>
+					</div>
+				</div>
+				<div class="widget">
+					<div class="widget-titulo">ÚLTIMAS NOTÍCIAS</div>
+					<div class="widget-conteudo">
+						<div class="noticia-item">
+							<a href="https://www.voxel.com.br/noticias/rockstar-trabalha-patch-corrigir-questao-grafica-rdr2-ps4-pro_839734.htm">Rockstar trabalha em patch para corrigir questão gráfica de RDR2 no PS4 PRO.</a>
+						</div>
+						<div class="noticia-item">
+							<a href="https://www.voxel.com.br/noticias/bully-2-gta-6-remaster-misterioso-rumor-aponta-janelas-lancamento_839675.htm">Bully 2, GTA 6 e remaster misterioso: rumor aponta janelas de lançamento</a>
+						</div>
+						<div class="noticia-item">
+							<a href="https://www.voxel.com.br/noticias/netflix-divulga-primeiro-olhar-henry-cavill-geralt-rivia_839724.htm">Netflix divulga 1º teaser oficial de Henry Cavill como Geralt de Rívia</a>
+						</div>
+						<div class="noticia-item">
+							<a href="https://www.voxel.com.br/noticias/lista-trapacas-gta-5-armas-invencibilidade-avioes_800035.htm">Lista de trapaças para GTA 5: armas, invencibilidade, aviões e mais!</a>
+						</div>
+						<div class="noticia-item">
+							<a href="https://www.voxel.com.br/noticias/ps-plus-novembro-oferece-yakuza-kiwami-bulletstorm-confira_839729.htm">PS Plus de novembro oferece Yakuza Kiwami, Bulletstorm e mais; confira</a>
+						</div>
+					</div>
+				</div>
+				<div class="widget">
+					<div class="widget-titulo">PUBLICIDADE</div>
+					<div class="widget-conteudo">
+						<img src="assets/images/banner.jpg" border="0" width="275">
+					</div>
+				</div>
+				<div class="widget">
+					<div class="widget-titulo">ENCONTRE-NOS NO FACEBOOK</div>
+					<div class="widget-conteudo">
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="272" height="154" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

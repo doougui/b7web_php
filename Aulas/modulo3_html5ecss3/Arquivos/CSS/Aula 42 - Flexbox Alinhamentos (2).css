@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	background-color: #f7d794;
+}
+
+.container {
+	display: flex;
+	height: 500px;
+	justify-content: center;
+	flex-flow: row wrap; /* flex-direction + flex-wrap */
+	background-color: #574b90;
+	align-content: space-around;
+}
+
+.container div {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	margin: 10px;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.container .div10 {
+	background-color: green;
+	order: -1;
+}

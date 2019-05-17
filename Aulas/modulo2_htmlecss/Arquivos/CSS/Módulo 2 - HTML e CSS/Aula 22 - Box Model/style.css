@@ -1,0 +1,21 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana;
+}
+
+.texto {
+	width: 1000px;
+	height: 500px;
+	background-color: #EEEEEE;
+	color: red;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-indent: 40px;
+	margin: auto;
+	margin-top: 20px;
+	padding-top: 20px;
+}

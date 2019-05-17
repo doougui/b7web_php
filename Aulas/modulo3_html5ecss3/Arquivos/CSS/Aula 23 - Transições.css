@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+}
+
+.exemplo {
+	width: 150px;
+	height: 150px;
+	margin: 100px auto;
+	background-color: green;
+	transition: all 1s ease;
+}
+
+.exemplo:hover {
+	width: 300px;
+	background-color: red;
+}
+
+p {
+	text-align: center;
+}
+
+a {
+	color: #000;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: #FF0000;
+}

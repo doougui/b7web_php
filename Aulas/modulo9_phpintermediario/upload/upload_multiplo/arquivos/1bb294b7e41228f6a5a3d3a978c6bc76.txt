@@ -1,0 +1,16 @@
+Manhã:
+
+8:30 - Revisar as palavras do Anki.
+9:00 - Assistir 2 aulas B7Web (inclui revisão).
+10:30 - Projeto: Login
+11:30 - Assistir Aula Python Solyd
+
+Tarde 
+
+14:00 - Assistir 3 aulas B7Web (inclui revisão).
+15:30 - Projeto: Login
+
+Noite
+
+18:30 - Assistir Aula Mairo Vergara, CaveiraTech, etc.
+20:30 - Projeto: Login

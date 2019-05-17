@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aula 14 - Verificadores</title>
+	<link rel="stylesheet" type="text/css" href="Arquivos/css/normalize.css">
+</head>
+<body>
+	<button onclick="testeVerificador()">Testar</button>
+	<script type="text/javascript">
+		var nome = "Douglas";
+
+		if (nome == "Douglas") {
+			alert("Meu nome é " + nome);
+		} else {
+			alert("Meu nome não é " + nome);
+		}
+
+		function testeVerificador() {
+			var x = parseFloat(prompt('Digite um número:'));
+
+			if (x >= 10) {
+				alert("O número é maior ou igual a 10.");
+			} else {
+				alert("O número é menor que 10.");
+			}
+		}
+	</script>
+</body>
+</html>

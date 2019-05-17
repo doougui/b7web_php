@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projeto: Galeria de Fotos com Lightbox</title>
+	<meta charset="UTF-8">
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.bgbox {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.7);
+			display: none;
+		}
+		.divbox {
+			position: fixed;
+			left: 50%;
+			top: 50%;
+			width: 500px;
+			height: 400px;
+			transform: translate(-50%, -50%);
+			background-color: #FFF;
+			padding: 20px;
+			display: none;
+		}
+		button {
+			width: 100px;
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+
+	<a href="javascript:;" class="galeria"><img src="img/1.jpg" alt="Planets" border="0" width="400"></a>
+	<a href="javascript:;" class="galeria"><img src="img/2.jpg" alt="Planets" border="0" width="400"></a>
+
+	<div class="bgbox"></div>
+	<div class="divbox">
+		<img src="" alt="Imagem" border="0" width="100%"><br>
+
+		<center>
+			<button>Fechar</button>
+		</center>
+	</div>
+	
+	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" aync></script>
+	<script src="main.js"></script>
+</body>
+</html>

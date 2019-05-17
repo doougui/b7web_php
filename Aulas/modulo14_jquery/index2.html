@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html onbeforeunload="carregou()">
+<head>
+	<meta charset="utf-8">
+	<title>Módulo 14 - jQuery</title>
+	<link rel="stylesheet" type="text/css" href="Arquivos/CSS/normalize.css">
+
+	<style>
+		.estilo {
+			background-color: red;
+		}
+		.fundovermelho {
+			background-color: red;
+		}
+		.focado {
+			background-color: #999;
+		}
+		.botao {
+			width: 150px;
+			height: 35px;
+			line-height: 35px;
+			background-color: #999;
+			text-align: center;
+			cursor: pointer;
+		}
+		.botao_em_cima {
+			background-color: #333;
+		}
+		.div {
+			width: 150px;
+			height: 150px;
+			background-color: #DDD;
+		}
+		.hellobar {
+			width: 100%;
+			height: 40px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: #000;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+		.hellobar p {
+			padding: 0;
+			margin: 0;
+			margin-right: 30px;
+			cursor: pointer;
+			font-size: 30px;
+			text-align: center;
+			color: white;
+		}
+		.divAjax {
+			width: 200px;
+			height: 170px;
+			background-color: #EEE;
+		}
+	</style>
+</head>
+<body>
+	<!-- Aula 12 - CSS, Styling e Dimensões && Aula 13 - Guardando dados em um elemento -->
+	
+	<div class="a12 a13">
+		<h1>Título da página</h1>
+
+		<span>Nome:</span><br>
+		<input type="text" name="nome" value="Douglas"><br>
+
+		<button>Botão</button>
+	</div>
+	
+	<!-- Aula 14 - Métodos do dia-a-dia -->
+
+	<div class="a14">
+		<div id="algo">
+			Este é um texto.
+		</div>
+
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+		</ul>
+	</div>
+
+	<!-- Aula 15 - FAQ: Como saber se um elemento existe? -->
+	<!-- Aula 16 - FAQ: Saber se elemento tem uma classe -->
+
+	<div class="faq">
+		<div id="algo">
+			Este é um texto.
+		</div>
+
+		<input type="text" name="nome" class="estilo">
+	
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+		</ul>
+	</div>
+
+	<!-- Aula 17 - FAQ: Ativar/Desativar um elemento de form -->
+	<!-- Aula 18 - FAQ: Pegar item selecionado de SELECT -->
+	<!-- Aula 19 - FAQ: Alterar 3o elemento de lista -->
+	<!-- Aula 20 - FAQ: Pegar elemento nativo --> 
+
+	<div class="faq2">
+		<input type="text" name="nome" id="nome"><br><br>
+		<input type="checkbox" name="salvo" id="salvo" value="1">
+		Salvar Senha? 
+
+		<select name="idade" id="idade">
+			<option value="10">10 Anos</option>
+			<option value="20">20 Anos</option>
+			<option value="30">30 Anos</option>
+			<option value="40">40 Anos</option>
+		</select>
+
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+			<li>Item 7</li>
+			<li>Item 8</li>
+			<li>Item 9</li>
+			<li>Item 10</li>
+		</ul>
+	</div>
+
+	<!-- Aula 22 - Definindo Eventos em Elementos DOM --> 
+
+	<div class="a22">
+		<button id="btn1">Clique aqui.</button>
+		<button id="btn2">Botão 2</button>
+	</div>
+
+	<div class="a26">
+		<form method="POST">
+			Nome:<br>
+			<input type="text" name="nome" id="nome"><br><br>
+
+			<input type="submit" id="botao" value="Enviar">
+		</form>
+	</div>
+
+	<!-- Aula 27 - Eventos de Browser -->
+
+	<div class="a27">
+		<div id="div" style="width: 100px; height: 200px; overflow-y: scroll;">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil placeat quo dignissimos fugit magni optio cum corporis animi earum, nisi quae illo laboriosam maxime itaque repellendus molestiae eos, explicabo temporibus quibusdam aspernatur, ab cupiditate accusamus fugiat ad voluptatum. Aperiam explicabo ducimus vel libero excepturi numquam repudiandae soluta doloribus laboriosam, unde voluptates tempora perferendis deleniti autem accusantium eos ipsam! Nesciunt voluptate neque exercitationem, nemo nobis officia cupiditate eius fugit, quis quia, harum magni mollitia esse accusantium asperiores tempora. Quae, repellendus. Harum facere mollitia voluptate, pariatur explicabo sit. Vitae necessitatibus ipsum, rem! Facere est nisi ipsam perspiciatis?
+
+			Doloremque enim perferendis rem deleniti accusamus illo facilis nemo voluptatum, cupiditate autem officia praesentium omnis eveniet saepe dolores sed quod vel repellat nam modi veritatis fugiat, sunt. Quibusdam distinctio aliquid eligendi accusamus tempora necessitatibus modi, voluptatem perferendis quia aperiam mollitia reiciendis similique, optio repudiandae, laborum eius odio voluptates perspiciatis rerum ullam fuga deleniti cum tenetur deserunt nulla! Quibusdam atque aperiam tenetur ducimus sint corrupti repudiandae accusantium natus nisi minima veritatis, inventore aut, autem sequi voluptate animi nemo neque, minus temporibus nobis consequuntur sunt. Beatae optio consequuntur explicabo, accusantium eos enim id, pariatur consectetur placeat obcaecati libero. Numquam natus quos nostrum ad eaque fugiat consectetur delectus.
+		</div>
+	</div>
+
+	<!-- Aula 28 - Eventos de Formulário -->
+
+	<div class="a28 a29">
+		<form method="POST" id="form">
+			Nome:<br>
+			<input type="text" name="nome" id="nome"><br><br>
+
+			E-mail:<br>
+			<input type="email" name="email" id="email"><br><br>
+
+			Idade:<br>
+			<select name="idade" id="idade">
+				<option>10 Anos</option>
+				<option>20 Anos</option>
+				<option>30 Anos</option>
+			</select><br><br>
+
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+
+	<!-- Aula 30, 31 e 32 - Eventos de Mouse, Efeitos e elemento desaparecer/aparecer -->
+	
+	<div class="a30 a31 a32">
+		<div class="botao">Botão</div>
+		<div class="div"></div>
+	</div>
+
+	<!-- Aula 33 - Efeitos de Fade -->
+
+	<div class="a33">
+		<div class="botao">Botão</div>
+		<div class="div"></div>
+	</div>
+
+	<!-- Aula 34 - Efeitos de Deslizamento (Slide) -->
+
+	<div class="a34">
+		<div class="hellobar"><p>&times;</p></div>
+		<div class="botao">Botão</div>
+		<div class="div"></div>
+	</div>
+
+	<!-- Aula 35 e 36 - Animações: Como usar o Animate -->
+
+	<div class="a35">
+		<div class="botao">Botão</div>
+		<div class="div"></div>
+	</div>
+
+	<!-- Aula 37 - FAQ: Como parar uma animação no meio? -->
+
+	<div class="a37">
+		<div class="botao" id="btn">Botão</div>
+		<div class="botao" id="btn2">Botão 2</div>
+		<div class="div"></div>
+	</div>
+
+	<!-- Aula 38 - FAQ: Somar propriedades na animação -->
+
+	<div class="a38">
+		<div class="botao">Botão</div>
+		<div class="div"></div>
+	</div>
+
+	<!-- Aula 42 - Método Auxiliares de Ajax -->
+
+	<div class="a42">
+		<div class="divAjax"></div>
+		<button>Ação</button>
+	</div>
+
+	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" aync></script>
+	<script src="script2.js"></script>
+</body>
+</html>

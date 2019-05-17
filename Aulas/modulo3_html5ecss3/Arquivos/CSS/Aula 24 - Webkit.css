@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+}
+
+.exemplo {
+	width: 150px;
+	height: 150px;
+	margin: 100px auto;
+	background-color: green;
+}

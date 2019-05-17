@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projeto: Projeto: Menu Dropdown</title>
+	<meta charset="UTF-8">
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.menu {
+			height: 50px;
+			background-color: #333;
+			color: #EEE;
+		}
+		ul {
+			list-style: none;
+		}
+		li {
+			float: left;
+			padding: 0px 20px;
+			line-height: 50px;
+			cursor: pointer;
+		}
+		.menu-1 {
+			height: 50px;
+		}
+		.menu-2 {
+			position: absolute;
+			width: 150px;
+			height: 150px;
+			background-color: #333;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="menu">
+		<ul>
+			<li>Home</li>
+			<li>
+				<div class="menu-1">Menu 1</div>
+				<div class="menu-2">
+					Opção 1 <br>
+					Opção 2 <br>
+					Opção 3
+				</div>
+			</li>
+			<li>Menu 2</li>
+			<li>
+				<div class="menu-1">Menu 3</div>
+				<div class="menu-2">
+					Opção 1 <br>
+					Opção 2 <br>
+					Opção 3
+				</div>
+			</li>
+			<li>
+				<div class="menu-1">Menu 4</div>
+				<div class="menu-2">
+					Opção 1 <br>
+					Opção 2 <br>
+					Opção 3
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" aync></script>
+	<script src="main.js"></script>
+</body>
+</html>
