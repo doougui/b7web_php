@@ -7,11 +7,13 @@ class Reservas {
 		$this -> pdo = $pdo;
 	}
 
-	public function getReservas() {
+	public function getReservas($data_inicio, $data_fim) {
 		$array = array();
 
-		$sql = "SELECT * FROM reservas";
+		$sql = "SELECT * FROM reservas WHERE (NOT(data_inicio > :data_fim OR data_fim < :data_inicio))";
 		$sql = $this -> pdo -> prepare($sql);
+		$sql -> bindValue(':data_inicio', $data_inicio);
+		$sql -> bindValue(':data_fim', $data_fim);
 		$sql -> execute();
 
 		if ($sql -> rowCount() > 0) {

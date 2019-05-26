@@ -1,18 +1,12 @@
 <?php 
 
-$data = "2017-02";
+$data = $_GET['ano'].'-'.$_GET['mes'];
 $dia1 = date('w', strtotime($data."-01")); // Rertorna o primeiro dia do mês (0: Domingo, 1: Segunda, 2: Terça, etc.)
 $dias = date('t', strtotime($data)); // Retorna a quantidade de dias que um mês tem
 $linhas = ceil(($dia1 + $dias) / 7); // Quantidade de linhas do calendário no mês
 $dia1 = -$dia1;
 $data_inicio = date("Y-m-d", strtotime($dia1." days", strtotime($data)));
 $data_fim = date("Y-m-d", strtotime(( ($dia1 + ($linhas * 7) - 1) )." days", strtotime($data)));
-
-echo "Primeiro dia do mês: ".$dia1."<br/>";
-echo "Quantidade de dias: ".$dias."<br/>";
-echo "Quantidade de linhas: ".$linhas."<br/>";
-echo "Data inicio: ".$data_inicio."<br/>";
-echo "Data fim: ".$data_fim;
 
 $mesanterior = false;
 ?>
@@ -29,23 +23,28 @@ $mesanterior = false;
 	</tr>
 	<?php for ($l = 0; $l < $linhas; $l++): ?>
 		<tr>
+			<?php for ($q = 0; $q < 7; $q++): ?>
 			<?php 
-			for ($q = 0; $q < 7; $q++) {
-				$w = date("d", strtotime(($q+($l * 7))." days", strtotime($data_inicio)));
+				$t = strtotime(($q + ($l * 7)).'days', strtotime($data_inicio));
+				$w = date('Y-m-d', $t);
+			?>
+				<td>
+				<?php 
 
-				if ($dia1 < 0 && intval($w) > 1 && $mesanterior == false) {
-					echo "<td style='color: blue'>".$w."</td>";
-				} else {
-					$mesanterior = true;
+				echo date('d/m', $t)."<br>";
+				$w = strtotime($w);
 
-					if ($mesanterior == true && intval($w) >= 1 && intval($w) > $dias) {
-						echo "<td style='color: blue'>".$w."</td>";
-					} else {
-						echo "<td>".$w."</td>";
+				foreach ($lista as $item) {
+					$dr_inicio = strtotime($item['data_inicio']);
+					$dr_fim = strtotime($item['data_fim']);
+
+					if ($w >= $dr_inicio && $w <= $dr_fim) {
+						echo $item['pessoa']." (".$item['id_carro'].") <br>";
 					}
 				}
-			} 
-			?>
+				?>
+				</td>
+			<?php endfor; ?>
 		</tr>
 	<?php endfor; ?>
 </table>
