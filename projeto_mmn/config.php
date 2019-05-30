@@ -5,10 +5,12 @@
 	$dbpass = "";
 
 	try {
+		global $pdo;
 		$pdo = new PDO($dsn, $dbuser, $dbpass);
 	} catch (PDOException $e) {
 		echo "Erro: ".$e -> getMessage();
 		exit;
 	}
 
-	
+	$limite = 3;
+	$patentes = array();
