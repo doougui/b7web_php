@@ -19,7 +19,7 @@
 		}
 
 		public function getAnuncio($id) {
-			$array = array();
+			$array = array();		
 			global $pdo;
 
 			$sql = "SELECT * FROM anuncios WHERE id = :id AND id_usuario = :id_usuario";
@@ -30,6 +30,16 @@
 
 			if ($sql -> rowCount() > 0) {
 				$array = $sql -> fetch();
+				$array['fotos'] = array();
+
+				$sql = "SELECT id, url FROM anuncios_imagens WHERE id_anuncio = :id_anuncio";
+				$sql = $pdo -> prepare($sql);
+				$sql -> bindValue(":id_anuncio", $id);
+				$sql -> execute();
+
+				if ($sql -> rowCount() > 0) {
+					$array['fotos'] = $sql -> fetchAll();
+				}
 			}
 
 			return $array;
@@ -56,7 +66,7 @@
 			}
 		}
 
-		public function editAnuncio($titulo, $categoria, $valor, $descricao, $estado, $id) {
+		public function editAnuncio($titulo, $categoria, $valor, $descricao, $estado, $fotos, $id) {
 			global $pdo;
 
 			$sql = "UPDATE anuncios SET 
@@ -70,6 +80,47 @@
 			$sql -> bindValue(":id", $id);
 			$sql -> bindValue(":id_usuario", $_SESSION['cLogin']);
 			$sql -> execute();
+
+			if (count($fotos) > 0) {
+				for ($q = 0; $q < count($fotos['tmp_name']) ; $q++) { 
+					$tipo = $fotos['type'][$q];
+
+					if (in_array($tipo, array('image/jpeg', 'image/png'))) {
+						$tmpname = md5(time().rand(0, 99999)).'.jpg';
+						move_uploaded_file($fotos['tmp_name'][$q], 'assets/images/anuncios/'.$tmpname);
+
+						list($width_orig, $height_orig) = getimagesize('assets/images/anuncios/'.$tmpname);
+						$ratio = $width_orig / $height_orig;
+
+						$width = 500;
+						$height = 500;
+
+						if ($width / $height > $ratio) {
+							$width = $height * $ratio;
+						} else {
+							$height = $width / $ratio;
+						}
+
+						$img = imagecreatetruecolor($width, $height);
+
+						if ($tipo == 'image/jpeg') {
+							$origi = imagecreatefromjpeg('assets/images/anuncios/'.$tmpname);
+						} elseif ($tipo == 'image/png') {
+							$origi = imagecreatefrompng('assets/images/anuncios/'.$tmpname);
+						}
+
+						imagecopyresampled($img, $origi, 0, 0, 0, 0, $width, $height, $width_orig, $height_orig);
+
+						imagejpeg($img, 'assets/images/anuncios/'.$tmpname, 80);
+
+						$sql = "INSERT INTO anuncios_imagens SET id_anuncio = :id_anuncio, url = :url";
+						$sql = $pdo -> prepare($sql);
+						$sql -> bindValue(":id_anuncio", $id);
+						$sql -> bindValue(":url", $tmpname);
+						$sql -> execute();
+					}
+				}
+			}
 
 			if ($sql -> rowCount() > 0) {
 				return true;
@@ -91,5 +142,32 @@
 			$sql = $pdo -> prepare($sql);
 			$sql -> bindValue(":id", $id);
 			$sql -> execute();
+		}
+
+		public function excluirFoto($id) {
+			global $pdo;
+
+			$id_anuncio = 0;
+
+			$sql = "SELECT url, id_anuncio FROM anuncios_imagens WHERE id = :id";
+			$sql = $pdo -> prepare($sql);
+			$sql -> bindValue(":id", $id);
+			$sql -> execute();
+
+			if ($sql -> rowCount() > 0) {
+				$row = $sql -> fetch();
+				$id_anuncio = $row['id_anuncio'];
+
+				if (is_file("assets/images/anuncios/".$row['url'])) {
+					unlink("assets/images/anuncios/".$row['url']);
+				}
+			}
+
+			$sql = "DELETE FROM anuncios_imagens WHERE id = :id";
+			$sql = $pdo -> prepare($sql);
+			$sql -> bindValue(":id", $id);
+			$sql -> execute();
+
+			return $id_anuncio;
 		}
 	}
