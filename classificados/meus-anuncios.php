@@ -20,6 +20,7 @@
 					<th>Ações</th>
 				</tr>
 			</thead>
+			<tbody>
 			<?php 
 				require 'classes/anuncios.class.php';
 
@@ -28,13 +29,27 @@
 
 				foreach ($anuncios as $anuncio): ?>
 					<tr>
-						<td><img src="assets/images/anuncios/<?= $anuncio['url']; ?>" alt="Imagem do produto" border="0"></td>
+						<td>
+							<?php 
+								if (!empty($anuncio['url'])) { ?>
+									<img src="assets/images/anuncios/<?= $anuncio['url']; ?>" height="50" alt="Imagem do produto" border="0">
+								<?php 
+								} else { ?>
+									<img src="assets/images/anuncios/default.png" height="50" alt="Imagem do produto">
+								<?php 
+								}
+							?>
+						</td>
 						<td><?= $anuncio['titulo']; ?></td>
 						<td><?= number_format($anuncio['valor'], 2); ?></td>
-						<td></td>
+						<td>
+							<a href="editar-anuncio.php?id=<?= $anuncio['id']; ?>" class="btn btn-default">Editar</a>
+							<a href="excluir-anuncio.php?id=<?= $anuncio['id']; ?>" class="btn btn-danger">Excluir</a>
+						</td>
 					</tr>
 				<?php endforeach;
 			?>
+			</tbody>
 		</table>
 	</div>
 <?php require 'pages/footer.php'; ?>
