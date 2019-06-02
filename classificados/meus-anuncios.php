@@ -41,7 +41,7 @@
 							?>
 						</td>
 						<td><?= $anuncio['titulo']; ?></td>
-						<td><?= number_format($anuncio['valor'], 2); ?></td>
+						<td>R$ <?= number_format($anuncio['valor'], 2); ?></td>
 						<td>
 							<a href="editar-anuncio.php?id=<?= $anuncio['id']; ?>" class="btn btn-default">Editar</a>
 							<a href="excluir-anuncio.php?id=<?= $anuncio['id']; ?>" class="btn btn-danger">Excluir</a>
