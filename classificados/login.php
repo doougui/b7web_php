@@ -3,8 +3,6 @@
 		<h1>Login</h1>
 
 		<?php 
-			require 'classes/usuarios.class.php';
-			$u = new Usuarios();
 
 			if (isset($_POST['email']) && !empty($_POST['email'])) {
 				$email = addslashes($_POST['email']);

@@ -12,10 +12,10 @@
 </head>
 <body>
 	<?php 
-
+		require 'classes/usuarios.class.php';
+		$u = new Usuarios();
+		
 		if (isset($_SESSION['cLogin']) && !empty($_SESSION['cLogin'])) {
-			require 'classes/usuarios.class.php';
-			$u = new Usuarios();
 			$id = $_SESSION['cLogin'];
 
 			$usuario = $u -> getDados($id);
