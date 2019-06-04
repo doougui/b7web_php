@@ -73,9 +73,9 @@
 			<div class="form-group">
 				<label for="estado">Estado de Conservação</label>
 				<select name="estado" id="estado" class="form-control">
-					<option value="0">Ruim</option>
-					<option value="1">Bom</option>
-					<option value="2">Ótimo</option>
+					<option value="1">Ruim</option>
+					<option value="2">Bom</option>
+					<option value="3">Ótimo</option>
 				</select>
 			</div>
 			

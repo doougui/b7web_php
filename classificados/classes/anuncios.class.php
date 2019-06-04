@@ -28,7 +28,7 @@
 			if (!empty($filtros['estado'])) {
 				$sql -> bindValue(":estado", ($filtros['estado'] - 1));
 			}
-			
+
 			$sql -> execute();
 
 			$row = $sql -> fetch();
@@ -145,7 +145,7 @@
 			$sql -> bindValue(":titulo", $titulo);
 			$sql -> bindValue(":descricao", $descricao);
 			$sql -> bindValue(":valor", $valor);
-			$sql -> bindValue(":estado", $estado);
+			$sql -> bindValue(":estado", ($estado - 1));
 			$sql -> execute();
 
 			if ($sql -> rowCount() > 0) {
@@ -165,7 +165,7 @@
 			$sql -> bindValue(":titulo", $titulo);
 			$sql -> bindValue(":descricao", $descricao);
 			$sql -> bindValue(":valor", $valor);
-			$sql -> bindValue(":estado", $estado);
+			$sql -> bindValue(":estado", ($estado - 1));
 			$sql -> bindValue(":id", $id);
 			$sql -> bindValue(":id_usuario", $_SESSION['cLogin']);
 			$sql -> execute();

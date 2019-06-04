@@ -87,9 +87,9 @@
 			<div class="form-group">
 				<label for="estado">Estado de Conservação</label>
 				<select name="estado" id="estado" class="form-control">
-					<option value="0" <?= ($info['estado'] == '0') ? 'selected' : ''; ?>>Ruim</option>
-					<option value="1" <?= ($info['estado'] == '1') ? 'selected' : ''; ?>>Bom</option>
-					<option value="2" <?= ($info['estado'] == '2') ? 'selected' : ''; ?>>Ótimo</option>
+					<option value="1" <?= ($info['estado'] == '0') ? 'selected' : ''; ?>>Ruim</option>
+					<option value="2" <?= ($info['estado'] == '1') ? 'selected' : ''; ?>>Bom</option>
+					<option value="3" <?= ($info['estado'] == '2') ? 'selected' : ''; ?>>Ótimo</option>
 				</select>
 			</div>
 
