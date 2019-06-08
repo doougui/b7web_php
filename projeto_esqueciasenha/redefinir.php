@@ -5,7 +5,7 @@ require "config.php";
 if (!empty($_GET['token'])) {
 	$token = $_GET['token'];
 
-	$sql = "SELECT * FROM usuarios_token WHERE hash = :hash AND used = 0 AND expired_in > NOW()";
+	$sql = "SELECT * FROM usuarios_token WHERE hash = :hash AND used = 0 AND expirado_em > NOW()";
 	$sql = $pdo -> prepare($sql);
 	$sql -> bindValue(":hash", $token);
 	$sql -> execute();

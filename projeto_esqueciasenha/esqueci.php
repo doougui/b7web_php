@@ -32,11 +32,11 @@ if (!empty($_POST['email'])) {
 
 		$token = md5(time().rand(0, 99999).rand(0, 99999));
 
-		$sql = "INSERT INTO usuarios_token (id_usuario, hash, expired_in) VALUES (:id_usuario, :hash, :expired_in)";
+		$sql = "INSERT INTO usuarios_token (id_usuario, hash, expirado_em) VALUES (:id_usuario, :hash, :expirado_em)";
 		$sql = $pdo -> prepare($sql);
 		$sql -> bindValue(":id_usuario", $id);
 		$sql -> bindValue(":hash", $token);
-		$sql -> bindValue(":expired_in", date('Y-m-d H-i', strtotime('+2 days')));
+		$sql -> bindValue(":expirado_em", date('Y-m-d H-i', strtotime('+2 days')));
 		$sql -> execute();
 
 		$subject = "Redefina sua senha.";

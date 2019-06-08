@@ -1,6 +1,6 @@
 <?php 
 
-$dsn = "mysql:dbname=blog;host=127.0.0.1";
+$dsn = "mysql:dbname=projeto_pdostatement;host=127.0.0.1";
 $dbuser = "root";
 $dbpass = "";
 
@@ -33,7 +33,7 @@ $sql = $pdo -> query($sql);
 if ($sql -> rowCount() > 0) {
 
 	foreach ($sql -> fetchAll() as $item) {
-		echo $item['id'].' - '.$item['titulo'].'<br/>';
+		echo "<p>".$item['id'].' - '.$item['titulo'].'</p>';
 	}
 
 }

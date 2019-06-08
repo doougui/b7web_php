@@ -5,7 +5,7 @@ class Contato {
 
 	public function __construct() {
 		try {
-			$this -> pdo = new PDO("mysql:dbname=crudoo;host=127.0.0.1", "root", "");
+			$this -> pdo = new PDO("mysql:dbname=crud_oo;host=127.0.0.1", "root", "");
 		} catch (PDOException $e) {
 			echo "Erro: ".$e -> getMessage();
 		}

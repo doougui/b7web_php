@@ -12,7 +12,7 @@ class Usuario {
 	public function __construct($i = "") {
 
 		try {
-			$this -> pdo = new PDO("mysql:dbname=usuarios;host=127.0.0.1", "root", "");
+			$this -> pdo = new PDO("mysql:dbname=projeto_usersclass;host=127.0.0.1", "root", "");
 		} catch (PDOException $e) {
 			echo "Erro: ".$e -> getMessage();
 		}

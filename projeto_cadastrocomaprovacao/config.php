@@ -1,6 +1,6 @@
 <?php
 
-$dsn = "mysql:dbname=cadastros;host=127.0.0.1";
+$dsn = "mysql:dbname=projeto_cadastrocomaprovacao;host=127.0.0.1";
 $dbuser = "root";
 $dbpass = "";
 

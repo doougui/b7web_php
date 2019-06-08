@@ -6,7 +6,7 @@ class Usuarios {
 
 	public function __construct() {
 		try {
-			$this -> db = new PDO("mysql:dbname=rede_social;host=127.0.0.1", "root", "");
+			$this -> db = new PDO("mysql:dbname=projeto_pdostatement;host=127.0.0.1", "root", "");
 		} catch (PDOException $e) {
 			echo "Erro: ".$e -> getMessage();
 		}

@@ -1,7 +1,3 @@
-<?php 
-
-?>
-
 <h1>Digite o email ou cpf do usuário</h1>
 
 <form method="GET">
@@ -23,7 +19,7 @@ if (!empty($_GET['campo'])) {
 		exit;
 	}
 
-	$sql = "SELECT * FROM users WHERE (email = :email) OR (cpf = :cpf) OR (nome = :nome)";
+	$sql = "SELECT * FROM usuarios WHERE (email = :email) OR (cpf = :cpf) OR (nome = :nome)";
 	$sql = $pdo -> prepare($sql);
 	$sql -> bindValue(":email", $campo);
 	$sql -> bindValue(":cpf", $campo);

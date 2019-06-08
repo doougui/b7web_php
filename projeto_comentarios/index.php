@@ -16,7 +16,7 @@ if (isset($_POST['nome']) && !empty($_POST['nome'])) {
 
 	$sql = $pdo -> prepare("INSERT INTO mensagens SET nome = :nome, msg = :msg, data_msg = NOW()");
 	$sql -> bindValue(":nome", $nome);
-	$sql -> bindValue(":msg", $mensagem);
+	$sql -> bindValue(":msg", utf8_decode($mensagem));
 	$sql -> execute();
 }
 
@@ -43,7 +43,7 @@ if ($sql -> rowCount() > 0) {
 	foreach ($sql -> fetchAll() as $mensagem) {
 		?>
 			<strong><?php echo $mensagem['nome']; ?></strong><br/>
-			<p><?php echo $mensagem['msg']; ?></p>
+			<p><?php echo utf8_encode($mensagem['msg']); ?></p>
 			<hr/>
 		<?php
 	}

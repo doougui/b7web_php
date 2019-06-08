@@ -14,10 +14,10 @@ class Logs {
 
 	public function registerLog($action) {
 		$ip = $_SERVER['REMOTE_ADDR'];
-		$sql = "INSERT INTO logs (ip, date_action, action) VALUES (:ip, NOW(), :action)";
+		$sql = "INSERT INTO historico (ip, data_acao, acao) VALUES (:ip, NOW(), :action)";
 		$sql = $this -> pdo -> prepare($sql);
 		$sql -> bindValue(":ip", $ip);
-		$sql -> bindValue(":action", $action);
+		$sql -> bindValue(":action", utf8_decode($action));
 		$sql -> execute();
 	}
 
