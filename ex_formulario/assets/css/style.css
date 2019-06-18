@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat';
+}
+
+.container {
+	max-width: 1200px;
+	min-height: 600px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+h1 {
+	line-height: 2.5rem;
+}
+
+h2 {
+	padding-top: 20px;
+}
+
+h1::after, h2::after {
+	content: '';
+	display: block;
+	margin-top: 20px;
+	width: 100%;
+	height: 1px;
+	background-color: #CCC;
+}
+
+h2::after {
+	margin-top: 5px;
+}
+
+.form {
+	margin: 20px 0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-6 {
+	flex: 1;
+}
+
+.first .labelDiv {
+	flex-basis: 195px;
+}
+
+.inputGroup {
+	display: flex;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.labelDiv {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.inputField {
+	flex-basis: calc(100% - 195px);
+}
+
+.col-6 .inputField {
+	width: 100%;
+}
+
+label {
+	font-size: 0.875em;
+	font-weight: bold;
+}
+
+input {
+	font-size: 1em;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	padding: 8px 10px;
+	margin-left: 25px;
+	outline: none;
+	transition: all .25s ease;
+}
+
+input:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #80bdff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
