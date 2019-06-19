@@ -52,26 +52,26 @@
 	<section class="resources-bg container">
 		<div class="about-us-title">
 			<h1>Sobre nôs</h1>
-			<p>Abaixo falaremos um pouco sobre a nossa empresa</p>
+			<p>Um pouco sobre nós</p>
 		</div>
 	
 		<div class="resources">
 			<div class="resource">
 				<img src="assets/img/undraw_developer_activity_bv83.svg" alt="Equipe">
-				<h2>Temos uma boa equipe de suporte</h2>
-				<p>Temos uma bela equipe para lhe auxiliar em seu aprendizado até mesmo nos feriados e finais de semana.</p>
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ullam! Tenetur accusantium explicabo, qui.</p>
 			</div>
 
 			<div class="resource">
 				<img src="assets/img/undraw_building_blocks_n0nc.svg" alt="Notificação">
-				<h2>Nossa historia</h2>
-				<p>Começamos nossa durante um trabalho de empreendedorismo e decidimos continuar o projeto.</p>
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<p>rem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ullam! Tenetur accusantium explicabo, qui.</p>
 			</div>
 
 			<div class="resource">
 				<img src="assets/img/undraw_wallet_aym5.svg" alt="Libras">
-				<h2>Criada sem fins lucrativos</h2>
-				<p>Nossa empresa não tem fins lucrativos, nossa missão é ajudar cada vez mais e mais pessoas com este projeto.</p>
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<p>rem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ullam! Tenetur accusantium explicabo, qui.</p>
 			</div>
 		</div>
 	</section>
@@ -86,18 +86,18 @@
 				<p><a href="#">Contato</a></p>
 			</div>
 			<div class="footer-item">
-				<p>Criado com ♥ por <a href="#">DevType</a></p>
-				<p>Prof. <a href="#">EMANUELE STAUDT DIAS</a></p>
+				<p>Criado com ♥ por <a href="#">Doougui</a></p>
+				<p>Lorem: <a href="#">Lorem ipsum dolor sit.</a></p>
 			</div>
 			<div class="footer-item">
-				<p><a href="#">Douglas Pinheiro Goulart</a></p>
-				<p><a href="#">Leandro Soares Cardinal</a></p>
-				<p><a href="#">João Pedro Domingos</a></p>
-				<p><a href="#">João Vitor Assunção Alves</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
 			</div>
 			<div class="footer-item">
-				<p><a href="#">CEDUP Diomicio Freitas</a></p>
-				<p><a href="#">201 - INT</a></p>
+				<p><a href="#">Lorem ipsum dolor sit.</a></p>
+				<p><a href="#">Lorem ipsum.</a></p>
 				<p>2019</p>
 			</div>
 		</div>

@@ -55,7 +55,7 @@
 
 		<div class="about-us-title">
 			<h1>Como funciona</h1>
-			<p>Nosso sistema ele funciona com alguns passos simples que veremos a seguir.</p>
+			<p>O funcionamento do sistema</p>
 		</div>
 
 		<div class="advantage">
@@ -64,8 +64,8 @@
 					<img src="assets/img/undraw_laravel_and_vue_59tp.svg" alt="Registre-se">
 				</div>
 				<div class="advantage-text texthow">
-					<h2>Primeiro você irá se cadastrar como professor ou aluno.</h2>
-					<p>Você deverá se cadastrar para informar suas informações para criarmos seu perfil em nosso site.</p>
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius recusandae facere perferendis nisi expedita cupiditate. Recusandae.</p>
 				</div>
 			</div>
 		</div>
@@ -76,8 +76,8 @@
 					<img src="assets/img/undraw_login_jdch.svg" alt="login">
 				</div>
 				<div class="advantage-text texthow">
-					<h2>E depois de confirmar seu email você poderá se logar no site.</h2>
-					<p>Após isso iremos enviar um email para você com um link onde você deverá abrir para confirmar seu email.</p>
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius recusandae facere perferendis nisi expedita cupiditate. Recusandae.</p>
 				</div>
 			</div>
 		</div>
@@ -88,8 +88,8 @@
 					<img src="assets/img/undraw_multitasking_hqg3.svg" alt="estude">
 				</div>
 				<div class="advantage-text texthow">
-					<h2>Após isso você irá ler e estudar os textos adicionados pelo professor.</h2>
-					<p>Agora você já tem acesso a sua dashboard do site, você so irá precisar adicionar seu professor na plataforma e começar a estudar normalmente utilizando os conteudos disponibilizados por ele.</p>
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius recusandae facere perferendis nisi expedita cupiditate. Recusandae.</p>
 				</div>
 			</div>
 		</div>
@@ -100,8 +100,8 @@
 					<img src="assets/img/undraw_done_a34v.svg" alt="Parabens">
 				</div>
 				<div class="advantage-text texthow">
-					<h2>E assim você conseguira tirar o melhor proveito dos seus estudos.</h2>
-					<p>Feito. Agora está tudo pronto para você começar a sua jornada de estudos.</p>
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eius recusandae facere perferendis nisi expedita cupiditate. Recusandae.</p>
 				</div>
 			</div>
 		</div>
@@ -112,23 +112,23 @@
 		<div class="footer container">
 			<div class="footer-item">
 				<p><strong>Hearless</strong></p>
-				<p><a href="./How_it_works.php">Como funciona</a></p>
-				<p><a href="./about-us.php">Sobre nós</a></p>
-				<p><a href="./contact.php">Contato</a></p>
+				<p><a href="#">Como funciona</a></p>
+				<p><a href="#">Sobre nós</a></p>
+				<p><a href="#">Contato</a></p>
 			</div>
 			<div class="footer-item">
-				<p>Criado com ♥ por <a href="#">DevType</a></p>
-				<p>Prof. <a href="#">EMANUELE STAUDT DIAS</a></p>
+				<p>Criado com ♥ por <a href="#">Doougui</a></p>
+				<p>Lorem: <a href="#">Lorem ipsum dolor sit.</a></p>
 			</div>
 			<div class="footer-item">
-				<p><a href="#">Douglas Pinheiro Goulart</a></p>
-				<p><a href="#">Leandro Soares Cardinal</a></p>
-				<p><a href="#">João Pedro Domingos</a></p>
-				<p><a href="#">João Vitor Assunção Alves</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
 			</div>
 			<div class="footer-item">
-				<p><a href="#">CEDUP Diomicio Freitas</a></p>
-				<p><a href="#">201 - INT</a></p>
+				<p><a href="#">Lorem ipsum dolor sit.</a></p>
+				<p><a href="#">Lorem ipsum.</a></p>
 				<p>2019</p>
 			</div>
 		</div>

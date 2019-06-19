@@ -118,18 +118,18 @@
 				<p><a href="#">Contato</a></p>
 			</div>
 			<div class="footer-item">
-				<p>Criado com ♥ por <a href="#">DevType</a></p>
-				<p>Prof. <a href="#">EMANUELE STAUDT DIAS</a></p>
+				<p>Criado com ♥ por <a href="#">Doougui</a></p>
+				<p>Lorem: <a href="#">Lorem ipsum dolor sit.</a></p>
 			</div>
 			<div class="footer-item">
-				<p><a href="#">Douglas Pinheiro Goulart</a></p>
-				<p><a href="#">Leandro Soares Cardinal</a></p>
-				<p><a href="#">João Pedro Domingos</a></p>
-				<p><a href="#">João Vitor Assunção Alves</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet.</a></p>
 			</div>
 			<div class="footer-item">
-				<p><a href="#">CEDUP Diomicio Freitas</a></p>
-				<p><a href="#">201 - INT</a></p>
+				<p><a href="#">Lorem ipsum dolor sit.</a></p>
+				<p><a href="#">Lorem ipsum.</a></p>
 				<p>2019</p>
 			</div>
 		</div>
