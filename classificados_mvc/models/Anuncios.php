@@ -25,7 +25,7 @@
 				$sql -> bindValue(":preco2", $preco[1]);
 			}
 			if (!empty($filtros['estado'])) {
-				$sql -> bindValue(":estado", ($filtros['estado'] - 1));
+				$sql -> bindValue(":estado", ($filtros['estado']));
 			}
 
 			$sql -> execute();
@@ -70,7 +70,7 @@
 				$sql -> bindValue(":preco2", $preco[1]);
 			}
 			if (!empty($filtros['estado'])) {
-				$sql -> bindValue(":estado", ($filtros['estado'] - 1));
+				$sql -> bindValue(":estado", ($filtros['estado']));
 			}
 			$sql -> execute();
 
@@ -124,8 +124,6 @@
 				if ($sql -> rowCount() > 0) {
 					$array['fotos'] = $sql -> fetchAll();
 				}
-			} else {
-				header('Location: '.BASE_URL);
 			}
 
 			return $array;
@@ -141,7 +139,7 @@
 			$sql -> bindValue(":titulo", $titulo);
 			$sql -> bindValue(":descricao", $descricao);
 			$sql -> bindValue(":valor", $valor);
-			$sql -> bindValue(":estado", ($estado - 1));
+			$sql -> bindValue(":estado", ($estado));
 			$sql -> execute();
 
 			if ($sql -> rowCount() > 0) {

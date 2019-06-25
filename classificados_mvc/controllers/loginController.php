@@ -15,6 +15,7 @@
 				if (!empty($_POST['email']) && !empty($_POST['senha'])) {
 					if ($u -> login($email, $senha)) {
 						header('Location: '.BASE_URL);
+						exit;
 					} else {
 						$dados['msg'] = 
 						'<div class="alert alert-warning alert-dismissible" role="alert">

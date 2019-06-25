@@ -10,15 +10,6 @@
 	<link rel="stylesheet" href="<?= BASE_URL ?>assets/css/style.css">
 </head>
 <body>
-
-	<?php 
-		if (isset($_SESSION['cLogin']) && !empty($_SESSION['cLogin'])) {
-			$u = new Usuarios();
-			$id = $_SESSION['cLogin'];
-			$usuario = $u -> getDados($id);
-		}
-	?>
-
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -26,7 +17,7 @@
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 				<?php if (isset($_SESSION['cLogin']) && !empty($_SESSION['cLogin'])): ?>
-					<li><a href="<?= BASE_URL ?>">Olá, <?= $usuario['nome']; ?></a></li>
+					<li><a href="<?= BASE_URL ?>">Olá, <?= $_SESSION['user']['nome']; ?></a></li>
 					<li><a href="<?= BASE_URL ?>anuncios">Meus Anúncios</a></li>
 					<li><a href="<?= BASE_URL ?>login/sair">Sair</a></li> 
 				<?php else: ?>

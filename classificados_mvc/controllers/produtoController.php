@@ -2,6 +2,7 @@
 	class produtoController extends controller {
 		public function index() {
 			header('Location: '.BASE_URL);
+			exit;
 		}
 
 		public function abrir($id = NULL) {

@@ -35,9 +35,9 @@
 						<label for="estado">Estado de conservação</label>
 						<select id="estado" name="filtros[estado]" class="form-control">
 							<option></option>
-							<option value="1" <?= ($filtros['estado'] == '0') ? 'selected="selected"' : '' ?>>Ruim</option>
-							<option value="2" <?= ($filtros['estado'] == '1') ? 'selected="selected"' : '' ?>>Bom</option>
-							<option value="3" <?= ($filtros['estado'] == '2') ? 'selected="selected"' : '' ?>>Ótimo</option>
+							<option value="1" <?= ($filtros['estado'] == '1') ? 'selected="selected"' : '' ?>>Ruim</option>
+							<option value="2" <?= ($filtros['estado'] == '2') ? 'selected="selected"' : '' ?>>Bom</option>
+							<option value="3" <?= ($filtros['estado'] == '3') ? 'selected="selected"' : '' ?>>Ótimo</option>
 						</select>
 					</div>
 
