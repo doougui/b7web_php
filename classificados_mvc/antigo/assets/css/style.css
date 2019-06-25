@@ -1,0 +1,16 @@
+.foto-item {
+	width: 150px;
+	height: 200px;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.foto-item img {
+	width: 150px;
+}
+
+.carousel-inner img {
+	min-width: 500px;
+	min-height: 500px;
+}
