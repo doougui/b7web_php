@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Página de Testes</title>
+</head>
+<body>
+	<div style="width: 300px; margin: auto; background-color: #999; padding: 30px;">
+		<h1>Este é um cabeçalho <?= rand(0, 9999) ?></h1>
+
+		<form method="POST">
+			<input type="text" placeholder="E-mail"><br><br>
+			<input type="password" placeholder="Senha"><br><br>
+
+			<input type="submit" value="Entrar">
+		</form>
+	</div>
+</body>
+</html>
