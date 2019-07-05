@@ -1,4 +1,5 @@
 <?php 
+	// Download: https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js.
 	// Documentação completa e exemplos (samples): https://www.chartjs.org/.
 
 	$vendas = array(10, 20, 30, 40, 20);
