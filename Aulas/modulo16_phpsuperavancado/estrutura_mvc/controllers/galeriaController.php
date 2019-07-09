@@ -7,4 +7,12 @@
 
 			$this -> loadTemplate('galeria', $dados);
 		}
+
+		public function abrir($id) {
+			$dados = array(
+				'quantidade' => $id
+			);
+
+			$this -> loadTemplate('galeria', $dados);
+		}
 	}
