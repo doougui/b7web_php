@@ -1,18 +1,20 @@
-function editar(id) {
-	
-	$.ajax({
-		url: 'editar.php',
-		type: 'POST',
-		data: {id:id},
-		beforeSend: function() {
-			$('#modal').find('.modal-body').html('Carregando...');
-			$('#modal').modal('show');
-		},
-		success: function(html) {
-			$('#modal').find('.modal-body').html(html);
-			$('#modal').find('.modal-body').find('form').on('submit', salvar);
-		}
-	});
+function editar(obj) {
+		
+	var tr = $(obj).closest('tr');
+
+	var id = tr.attr('data-id');
+	var nome = tr.attr('data-nome');
+	var email = tr.attr('data-email');
+	var senha = tr.attr('data-senha');
+
+	$('#modal-editar').find('.modal-body').find('#id').val(id);
+	$('#modal-editar').find('.modal-body').find('#nome').val(nome);
+	$('#modal-editar').find('.modal-body').find('#email').val(email);
+	$('#modal-editar').find('.modal-body').find('#senha').val(senha);
+
+	$('#modal-editar').find('.modal-body').find('form').on('submit', salvar);
+
+	$('#modal-editar').modal('show');
 }
 
 function salvar(e) {

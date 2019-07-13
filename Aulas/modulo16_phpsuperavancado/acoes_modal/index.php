@@ -31,17 +31,44 @@
 	
 	<table border="1" width="500">
 		<?php foreach ($usuarios as $usuario): ?>
-			<tr>
+			<tr 
+			data-nome="<?= $usuario['nome'] ?>" 
+			data-email="<?= $usuario['email'] ?>" 
+			data-senha="<?= $usuario['senha'] ?>" 
+			data-id="<?= $usuario['id'] ?>">
 				<td><?= $usuario['nome'] ?></td>
 				<td><?= $usuario['email'] ?></td>
 				<td><?= $usuario['senha'] ?></td>
 				<td>
-					<a href="javascript:;" onclick="editar('<?= $usuario['id'] ?>')">Editar</a>
+					<a href="javascript:;" onclick="editar(this)">Editar</a>
 					<a href="javascript:;" onclick="excluir('<?= $usuario['id'] ?>')">Excluir</a>
 				</td>
 			</tr>
 		<?php endforeach; ?>
 	</table>
+
+	<div id="modal-editar" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<form method="POST">
+						<input type="hidden" name="id" id="id">
+
+						<label for="nome">Nome:</label><br>
+						<input type="text" name="nome" id="nome"><br><br>
+
+						<label for="email">Email:</label><br>
+						<input type="email" name="email" id="email"><br><br>
+
+						<label for="senha">Senha:</label><br>
+						<input type="text" name="senha" id="senha"><br><br>
+
+						<input type="submit" value="Salvar">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
  
 	<div id="modal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
