@@ -18,3 +18,14 @@ header, footer {
 	line-height: 100px;
 	text-align: center;
 }
+
+form, h3 {
+	text-align: center;
+}
+
+.aviso {
+	padding: 10px;
+	background-color: #FF0000;
+	border: 2px solid #FFFFFF;
+	margin: 10px;
+}

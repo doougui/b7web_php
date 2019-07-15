@@ -1,3 +1,4 @@
+<a href="<?= BASE_URL ?>contatos/add">Adicionar</a><br>
 <table border="1" width="100%">
 	<tr>
 		<th>ID</th>
@@ -12,8 +13,8 @@
 			<td><?= $item['nome']?></td>
 			<td><?= $item['email']?></td>
 			<td>
-				<a href="#">Editar</a>
-				<a href="#">Excluir</a>
+				<a href="<?= BASE_URL ?>">Editar</a>
+				<a href="<?= BASE_URL ?>">Excluir</a>
 			</td>
 		</tr>
 	<?php endforeach; ?>
