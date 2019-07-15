@@ -1,7 +1,7 @@
 <?php 
 	class contatosController extends controller {
 		public function index() {
-
+			header('Location: '.BASE_URL.'add');
 		}
 
 		public function add() {
@@ -30,5 +30,18 @@
 			} else {
 				header('Location: '.BASE_URL.'contatos/add');
 			}
+		}
+
+		public function edit($id) {
+
+		}
+
+		public function del($id = NULL) {
+			if (isset($id) && !empty($id)) {
+				$contatos = new Contatos();
+				$contatos -> del($id);
+			} 
+
+			header('Location: '.BASE_URL);
 		}
 	}

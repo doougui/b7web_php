@@ -9,12 +9,12 @@
 	
 	<?php foreach ($lista as $item): ?>
 		<tr>
-			<td><?= $item['id']?></td>
-			<td><?= $item['nome']?></td>
-			<td><?= $item['email']?></td>
+			<td><?= $item['id'] ?></td>
+			<td><?= $item['nome'] ?></td>
+			<td><?= $item['email'] ?></td>
 			<td>
-				<a href="<?= BASE_URL ?>">Editar</a>
-				<a href="<?= BASE_URL ?>">Excluir</a>
+				<a href="<?= BASE_URL ?>contatos/edit/<?= $item['id'] ?>">Editar</a>
+				<a href="<?= BASE_URL ?>contatos/del/<?= $item['id'] ?>">Excluir</a>
 			</td>
 		</tr>
 	<?php endforeach; ?>

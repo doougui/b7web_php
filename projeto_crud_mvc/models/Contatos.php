@@ -27,6 +27,13 @@
 			}
 		}
 
+		public function del($id) {
+			$sql = "DELETE FROM contatos WHERE id = :id";
+			$sql = $this -> db -> prepare($sql);
+			$sql -> bindValue(':id', $id);
+			$sql -> execute();
+		}
+
 		private function emailExists($email) {
 			$sql = "SELECT * FROM contatos WHERE email = :email";
 			$sql = $this -> db -> prepare($sql);
