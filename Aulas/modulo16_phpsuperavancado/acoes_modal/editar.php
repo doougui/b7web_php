@@ -20,20 +20,7 @@
 		if ($sql -> rowCount() > 0) {
 			$info = $sql -> fetch();
 			?>
-				<form method="POST">
-					<input type="hidden" name="id" id="id" value="<?= $info['id'] ?>">
 
-					<label for="nome">Nome:</label><br>
-					<input type="text" name="nome" id="nome" value="<?= $info['nome'] ?>"><br><br>
-
-					<label for="email">Email:</label><br>
-					<input type="email" name="email" id="email" value="<?= $info['email'] ?>"><br><br>
-
-					<label for="senha">Senha:</label><br>
-					<input type="text" name="senha" id="senha" value="<?= $info['senha'] ?>"><br><br>
-
-					<input type="submit" value="Salvar">
-				</form>
 			<?php
 		}
 	}
