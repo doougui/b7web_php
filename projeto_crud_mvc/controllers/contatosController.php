@@ -33,7 +33,38 @@
 		}
 
 		public function edit($id) {
+			$dados = array(
+				'error' => ''
+			);
 
+			if (isset($_GET['error']) && !empty($_GET['error'])) {
+				$dados['error'] = $_GET['error'];
+			}
+
+			$contatos = new Contatos();
+			$dados['info'] = $contatos -> getInfo($id);
+
+			if (empty($dados['info'])) {
+				header('Location: '.BASE_URL);
+			}
+
+			$this -> loadTemplate('edit', $dados);
+		}
+
+		public function edit_save($id) {
+			if (isset($_POST['email']) && !empty($_POST['email'])) {
+				$nome = isset($_POST['nome']) ? addslashes($_POST['nome']) : NULL;
+				$email = addslashes($_POST['email']);
+
+				$contatos = new Contatos();
+				if ($contatos -> edit($id, $nome, $email)) {
+					header('Location: '.BASE_URL);
+				} else {
+					header('Location: '.BASE_URL.'contatos/edit/'.$id.'?error=exist');
+				}
+			} else {
+				header('Location: '.BASE_URL.'contatos/edit');
+			}
 		}
 
 		public function del($id = NULL) {
