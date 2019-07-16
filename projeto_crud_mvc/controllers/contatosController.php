@@ -41,14 +41,18 @@
 				$dados['error'] = $_GET['error'];
 			}
 
-			$contatos = new Contatos();
-			$dados['info'] = $contatos -> getInfo($id);
+			if (!empty($id)) {
+				$contatos = new Contatos();
+				$dados['info'] = $contatos -> getInfo($id);
 
-			if (empty($dados['info'])) {
+				if (empty($dados['info'])) {
+					header('Location: '.BASE_URL);
+				}
+
+				$this -> loadTemplate('edit', $dados);
+			} else {
 				header('Location: '.BASE_URL);
 			}
-
-			$this -> loadTemplate('edit', $dados);
 		}
 
 		public function edit_save($id) {
