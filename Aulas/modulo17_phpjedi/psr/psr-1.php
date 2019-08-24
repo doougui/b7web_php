@@ -6,3 +6,5 @@
 	// - Class names MUST be declared in StudlyCaps (no caso de controllers, por exemplo, ficaria HomeController, e não homeController).
 	// - Class constants MUST be declared in all upper case with underscore separators (Ex: DATA_DE_CRIACAO, VERSION).
 	// - Method names MUST be declared in camelCase (Ex: getNome(), primeira letra minúscula).
+	
+	
