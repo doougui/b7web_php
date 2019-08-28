@@ -1,5 +1,9 @@
 <?php 
-	class Usuarios extends model {
+	namespace Models;
+
+	use \Core\Model;
+
+	class Usuarios extends Model {
 		public function getAll() {
 			$usuarios = array();
 

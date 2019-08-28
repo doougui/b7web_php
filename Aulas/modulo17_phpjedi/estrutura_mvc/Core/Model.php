@@ -1,5 +1,7 @@
 <?php 
-	class model {
+	namespace Core;
+
+	class Model {
 		protected $db;
 
 		public function __construct() {
