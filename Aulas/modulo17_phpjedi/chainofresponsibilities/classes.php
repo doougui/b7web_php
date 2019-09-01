@@ -1,4 +1,8 @@
 <?php 
+	interface Veiculo {
+		public function transport(Carga $carga);
+	}
+
 	class Carga {
 		private $peso;
 
@@ -11,7 +15,7 @@
 		}
 	}
 
-	class Moto {
+	class Moto implements Veiculo {
 		private $sucessor;
 
 		public function setSucessor($sucessor) {
@@ -27,7 +31,7 @@
 		}
 	}
 
-	class Carro {
+	class Carro implements Veiculo {
 		private $sucessor;
 
 		public function setSucessor($sucessor) {
@@ -43,7 +47,7 @@
 		}
 	}
 
-	class Caminhao {
+	class Caminhao implements Veiculo {
 		private $sucessor;
 
 		public function setSucessor($sucessor) {
