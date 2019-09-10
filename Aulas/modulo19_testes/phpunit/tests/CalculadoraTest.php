@@ -2,33 +2,25 @@
 	use PHPUnit\Framework\TestCase;
 
 	class CalculadoraTest extends TestCase {
-		public function testSoma() {
+		/**
+		* @dataProvider somaDataProvider
+		*/
+	
+		public function testSoma($n1, $n2, $esperado) {
 			$calc = new Calculadora();
-			// $proc = ); // Também pode ser criado variável, mas é desnecessário.
 
 			$this -> assertEquals(
-				2, 
-				$calc -> soma(1, 1)
+				$esperado, 
+				$calc -> soma($n1, $n2)
 			);
 		}
 
-		public function testSoma2() {
-			$calc = new Calculadora();
-			// $proc = ); // Também pode ser criado variável, mas é desnecessário.
-
-			$this -> assertEquals(
-				-5, 
-				$calc -> soma(-10, 5)
-			);
-		}
-
-		public function testSoma3() {
-			$calc = new Calculadora();
-			// $proc = ); // Também pode ser criado variável, mas é desnecessário.
-
-			$this -> assertEquals(
-				59, 
-				$calc -> soma(50, 9)
+		public function somaDataProvider() {
+			return array(
+				array(1, 1, 2),
+				array(20, 10, 30),
+				array(-100, 30, -70),
+				array(10.5, 0.5, 11)
 			);
 		}
 	}
